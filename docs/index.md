@@ -23,25 +23,25 @@ The curated dataset contains over 1600 data points across five types of illusion
 
 
 ## Experiments and Results
-We evaluate four representative models, LLaVA, InstructBLIP, Unified-IO and OFA on the VL-Illusion dataset. Please refer to the paper for more details.
+We evaluate four representative models, [LLaVA](https://arxiv.org/abs/2304.08485), [InstructBLIP](https://arxiv.org/abs/2305.06500), [Unified-IO](https://arxiv.org/abs/2206.08916) and [OFA](https://arxiv.org/abs/2202.03052) on the VL-Illusion dataset. Please refer to the paper for more details.
 
 ### How Well Do Models Recognize Illusions?
-Firstly,
-
 ![1](imgs/1.png)
-- Under SameDiff-QA task, which specially challenges the ability to recognize illusions, models more likely to not have illusions compared to recognize like humans.
-- But we do confirm that there's a positive correlation between model scale and the ability to recognize illusions
 
-### How Alined Are Models Under Illusion?
+Under SameDiff-QA task, which specially challenges the ability to recognize illusions, we found that models rarely perceive illusions like humans.
+
+But we do confirm that there's a positive correlation between model scale and the ability to recognize illusions
+
+### How Humanlike Are Models Under Illusion?
 ![2](imgs/2.png)
 
-We find the answer to be complex and model's performance varies significantly across different task formulations.
+Here, we define humanlike rate as the percentage of data points where the model's prediction is the same as human's prediction.
 
-For example, the alignment score is quite low on RefQA and AttrQA tasks, but the alignment score is much higher on RefLoc task.
+We find the answer to be complex and model's performance varies significantly across different task formulations. For example, the alignment score is quite low on RefQA and AttrQA tasks, but the alignment score is much higher on RefLoc task.
 
 Again, we confirm that larger models consistently align better with human perception.
 
-## Does Alignment Vary By Illusion Type?
+### Does Alignment Vary By Illusion Type?
 ![3](imgs/3.png)
 
-Yes, we found that the alignment score varies significantly across different illusion types. Color constancy illusion is the most challenging one for models, while the alignment score is much higher for the perspective illusion.
+Yes, we found that the humanlike rate varies significantly across different illusion types. Color constancy illusion is the most challenging one for models, while the humanlike rate is much higher for the perspective illusion.
