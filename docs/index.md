@@ -11,7 +11,7 @@ layout: default
 **In this work**
 
 - We built [VL-Illusion](https://github.com/vl-illusion/dataset), a new dataset that systematically evaluate the problem.
-- Through analysis, we found that alignment is low, larger models are closer to human perception and more susceptible to visual illusions.
+- Through analysis, we found that although the alignment between model and human's perception is low under illusion, larger models are more susceptible to visual illusions, and closer to human perception.
 
 **Abs**
 
@@ -20,12 +20,33 @@ Our findings have shown that although the overall alignment is low, larger model
 Our dataset and initial findings will promote a better understanding of visual illusions in humans and machines and provide a stepping stone for future computational models that can better align humans and machines in perceiving and communicating about the shared visual world. The code and data are available [here](https://github.com/vl-illusion/dataset).
 
 ## The VL-Illusion Dataset
+![ Example illusion from each category and the corresponding explanations](imgs/dataset_types.png)
+
 The curated dataset contains over 1600 data points across five types of illusions and supports 4 different evaluation protocols.
 
-## Results
-### How well do models recognize illusions?
-- In SameDiffQA, models more likely to not have illusions than recognize like humans
-  - But larger models recognize illusions more
-- Positive correlation between model scale and recognizing illusions
+![Example illustration for each task setup. Left:SameDiff QA. Right: RefQA, AttrQA, RefLoc](imgs/dataset_tasks.png)
 
-- 
+
+## Experiments and Results
+We evaluate four representative models, LLaVA, InstructBLIP, Unified-IO and OFA on the VL-Illusion dataset. Please refer to the paper for more details.
+
+### How Well Do Models Recognize Illusions?
+Firstly,
+
+![1](imgs/1.png)
+- Under SameDiff-QA task, which specially challenges the ability to recognize illusions, models more likely to not have illusions compared to recognize like humans.
+- But we do confirm that there's a positive correlation between model scale and the ability to recognize illusions
+
+### How Alined Are Models Under Illusion?
+![2](imgs/2.png)
+
+We find the answer to be complex and model's performance varies significantly across different task formulations.
+
+For example, the alignment score is quite low on RefQA and AttrQA tasks, but the alignment score is much higher on RefLoc task.
+
+Again, we confirm that larger models consistently align better with human perception.
+
+## Does Alignment Vary By Illusion Type?
+![3](imgs/3.png)
+
+Yes, we found that the alignment score varies significantly across different illusion types. Color constancy illusion is the most challenging one for models, while the alignment score is much higher for the perspective illusion.
