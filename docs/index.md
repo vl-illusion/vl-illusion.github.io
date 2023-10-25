@@ -24,7 +24,7 @@ The curated dataset contains over 1600 data points across five types of illusion
 
 
 ## Experiments and Results
-We evaluate four representative models, [LLaVA](https://arxiv.org/abs/2304.08485), [InstructBLIP](https://arxiv.org/abs/2305.06500), [Unified-IO](https://arxiv.org/abs/2206.08916) and [OFA](https://arxiv.org/abs/2202.03052) on the VL-Illusion dataset. Please refer to the paper for more details.
+We evaluate four representative models, [LLaVA](https://arxiv.org/abs/2304.08485), [InstructBLIP](https://arxiv.org/abs/2305.06500), [Unified-IO](https://arxiv.org/abs/2206.08916) and [OFA](https://arxiv.org/abs/2202.03052) on the VL-Illusion dataset. Please refer to our paper for more details.
 
 ### How Well Do Models Recognize Illusions?
 ![1](imgs/1.png)
@@ -38,7 +38,7 @@ But we do confirm that there's a positive correlation between model scale and th
 
 Here, we define humanlike rate as the percentage of data points where the model's prediction is the same as human's prediction.
 
-We find the answer to be complex and model's performance varies significantly across different task formulations. For example, the alignment score is quite low on RefQA and AttrQA tasks, but the alignment score is much higher on RefLoc task.
+We find the answer to be complex and model's performance varies significantly across different task formulations. For example, the humanlike rate is quite low on RefQA and AttrQA tasks, but is much higher on RefLoc task.
 
 Again, we confirm that larger models consistently align better with human perception.
 
