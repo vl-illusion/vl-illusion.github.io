@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-## Intro
+## Do Vision-Language Models Perceive Illusions Like Humans?
 
 **Motivations**
 
