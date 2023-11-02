@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-- [Paper Link](https://arxiv.org/abs/2311.00047) | [Dataset Link](https://github.com/vl-illusion/dataset)
+[Paper Link](https://arxiv.org/abs/2311.00047) | [Dataset Link](https://github.com/vl-illusion/dataset)
 
 ### Intro
 
@@ -12,11 +12,11 @@ layout: default
 
 **In this work**
 
-- We built [VL-Illusion](https://github.com/vl-illusion/dataset), a new dataset that systematically evaluate the problem.
+- We built [Grounding Visual Illusion in Language (GVIL) dataset](https://github.com/vl-illusion/dataset), a new dataset that systematically evaluate the problem.
 - Among all other exciting findings, we found that although the alignment between model and human's perception is low under illusion, larger models are more susceptible to visual illusions, and closer to human perception.
 
 
-## The VL-Illusion Dataset
+## The Grounding Visual Illusion in Language (GVIL) Dataset
 ![ Example illusion from each category and the corresponding explanations](imgs/dataset_types.png)
 
 The curated dataset contains over 1600 data points across five types of illusions and supports 4 different evaluation protocols.
