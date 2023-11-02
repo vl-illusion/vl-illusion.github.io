@@ -25,7 +25,7 @@ The curated dataset contains over 1600 data points across five types of illusion
 
 
 ## Experiments and Results
-We evaluate four representative models, [LLaVA](https://arxiv.org/abs/2304.08485), [InstructBLIP](https://arxiv.org/abs/2305.06500), [Unified-IO](https://arxiv.org/abs/2206.08916) and [OFA](https://arxiv.org/abs/2202.03052) on the VL-Illusion dataset. Please refer to our paper for more details.
+We evaluate four representative models, [LLaVA](https://arxiv.org/abs/2304.08485), [InstructBLIP](https://arxiv.org/abs/2305.06500), [Unified-IO](https://arxiv.org/abs/2206.08916) and [OFA](https://arxiv.org/abs/2202.03052) on the VL-Illusion dataset. Please refer to [our paper]((https://arxiv.org/abs/2311.00047) for more details.
 
 ### How Well Do Models Recognize Illusions?
 ![1](imgs/1.png)
