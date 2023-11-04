@@ -55,9 +55,6 @@ As a preliminary study, we also evaluate the recently released GPT-4 Vision mode
 The model often succeeds in simpler tasks like examples 1 and 2 but struggles with hand-crafted ones such as examples 3-6. We hypothesize that this is due to the model being trained on many online illusion resources, but it has limited generalization to complex, unfamiliar scenarios.
 
 ### Selected Cases
-Notably, we saw that GPT-4
-
-
 ![4](imgs/4v_vqa_correct_1.png)
 **Example 1**: GPT-4V Got Everything Right. 
 
