@@ -52,10 +52,7 @@ Yes, we found that the humanlike rate varies significantly across different illu
 
 As a preliminary study, we also evaluate the recently released GPT-4 Vision model on the GVIL dataset. As of November 4, 2023, our access to the model is limited to the ChatGPT interface, allowing only for qualitative analysis. 
 
-GPT-4 Vision often succeed in simple tasks such as example 1 and 2, but failed much more to answer hand-crafted examples such as example 3, 4, 5. This might indicate that GPT-4 Vision has been trained on many online illusion resouces but failed to generalize to more complex, unseen cases.
-
-The model often succeed in simpler tasks like examples 1 and 2 but struggles with hand-crafted ones such as examples 3-6. We hypothize that this is due to the model being trained on many online illusion resources, but has limited generalization to complex, unfamiliar scenarios.
-
+The model often succeeds in simpler tasks like examples 1 and 2 but struggles with hand-crafted ones such as examples 3-6. We hypothesize that this is due to the model being trained on many online illusion resources, but it has limited generalization to complex, unfamiliar scenarios.
 
 ### Selected Cases
 Notably, we saw that GPT-4
