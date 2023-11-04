@@ -47,3 +47,34 @@ Again, we confirm that larger models consistently align better with human percep
 ![3](imgs/3.png)
 
 Yes, we found that the humanlike rate varies significantly across different illusion types. Color constancy illusion is the most challenging one for models, while the humanlike rate is much higher for the perspective illusion.
+
+## A Preliminary Study on GPT-4 Vision
+
+As a preliminary study, we also evaluate the recently released GPT-4 Vision model on the GVIL dataset. As of November 4, 2023, our access to the model is limited to the ChatGPT interface, allowing only for qualitative analysis. 
+
+GPT-4 Vision often succeed in simple tasks such as example 1 and 2, but failed much more to answer hand-crafted examples such as example 3, 4, 5. This might indicate that GPT-4 Vision has been trained on many online illusion resouces but failed to generalize to more complex, unseen cases.
+
+The model often succeed in simpler tasks like examples 1 and 2 but struggles with hand-crafted ones such as examples 3-6. We hypothize that this is due to the model being trained on many online illusion resources, but has limited generalization to complex, unfamiliar scenarios.
+
+
+### Selected Cases
+Notably, we saw that GPT-4
+
+
+![4](imgs/4v_vqa_correct_1.png)
+**Example 1**: GPT-4V Got Everything Right. 
+
+![4](imgs/4v_vqa_correct_2.png)
+**Example 2**: GPT-4V refuses to give a straight answer, but its explanation is consistent and correct.
+
+![4](imgs/4v_vqa_1_fail.png)
+**Example 3**: GPT-4V recognizes the optical illusion, yet mistakenly suggests that the bottom bottle is bigger.
+
+![4](imgs/4v_vqa_2_fail.png)
+**Example 4**: GPT-4V recognizes the optical illusion, yet mistakenly suggests that the left solid circle is bigger.
+
+![4](imgs/4v_vqa_fail_3.png)
+**Example 5**: GPT-4V recognizes the optical illusion, yet mistakenly suggests that the right starred balloon is blue.
+
+![4](imgs/4v_vqa_fail_4.png)
+**Example 6**: GPT-4V's prediction is consistent with human's perception.
