@@ -62,13 +62,16 @@ The model often succeeds in simpler tasks like examples 1 and 2 but struggles wi
 **Example 2**: GPT-4V refuses to give a straight answer, but its explanation is consistent and correct.
 
 ![4](imgs/4v_vqa_1_fail.png)
-**Example 3**: GPT-4V recognizes the optical illusion, yet mistakenly suggests that the bottom bottle is bigger.
+**Example 3**: GPT-4V recognizes the visual illusion, yet mistakenly suggests that the bottom bottle is bigger.
 
 ![4](imgs/4v_vqa_2_fail.png)
-**Example 4**: GPT-4V recognizes the optical illusion, yet mistakenly suggests that the left solid circle is bigger.
+**Example 4**: GPT-4V recognizes the visual illusion, yet mistakenly suggests that the left solid circle is bigger.
 
 ![4](imgs/4v_vqa_fail_3.png)
-**Example 5**: GPT-4V recognizes the optical illusion, yet mistakenly suggests that the right starred balloon is blue.
+**Example 5**: GPT-4V recognizes the visual illusion, yet mistakenly suggests that the right starred balloon is blue.
+
+![4](imgs/4v_vqa_3_fail.png)
+**Example 6**: GPT-4V recognizes the presence of visual illusion and acknowledges they are actual the same in size. However, it mistakenly suggests that the orange ball on the left looks smaller. 
 
 ![4](imgs/4v_vqa_fail_4.png)
-**Example 6**: GPT-4V's prediction is consistent with human's perception.
+**Example 7**: GPT-4V's prediction is consistent with human's perception.
